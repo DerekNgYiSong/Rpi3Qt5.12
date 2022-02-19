@@ -1,11 +1,11 @@
-# Rpi3Qt5.12.2
+# Raspberry Pi 3 with Qt5.12.2
 
 
 
 This steps compiles QT5.12.2 into raspberry pi 3 with Buster OS and cross compile to Rpi3 program.
 
-
-Raspberry PI OS: Buster
+Compiled successfully with system below:
+Raspberry PI OS: Buster 
 Host machine: ubuntu 20.2 LTS
 IP setup in raspberry pi OS = 192.168.58.2
 
@@ -18,8 +18,32 @@ Reference: https://www.interelectronix.com/qt-on-the-raspberry-pi-4.html
 Raspberry Pi 3 Setup
 --------------------------------------------
 Setup raspberry pi OS into memory card and boot to RPi3
+
+Raspberry Pi IP setting
+--------------------------------------------
+
+#Add static ip to raspberry pi
+sudo nano /etc/dhcpcd.conf
+edit lines:
+ interface eth0
+ static ip_address=192.168.58.2/24
+//note: with dhcpcd.conf setting, internet will not forcefully go through LAN port, but from wifi connection as setup in next steps
+
+#add wifi connection to raspberry pi 
+sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
+add these
+ network={
+  ssid="your ssid"
+  psk="password"
+ }
+
+Raspberry Pi Enable GL Desktop
+--------------------------------------------
+
 sudo raspi-config >>> enable KMS GL Desktop in advance option
 
+Raspberry Pi Fetch dependencies
+--------------------------------------------
 sudo nano /etc/apt/sources.list >>> uncomment deb_src  on last line
 
 sudo apt-get update
