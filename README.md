@@ -10,8 +10,9 @@ Host machine: ubuntu 20.2 LTS
 IP setup in raspberry pi OS = 192.168.58.2
 
 
-Reference: https://www.interelectronix.com/qt-on-the-raspberry-pi-4.html
-
+Reference: 
+https://www.interelectronix.com/qt-on-the-raspberry-pi-4.html
+https://github.com/PhysicsX/QTonRaspberryPi/blob/main/qt5.14.2onRaspberrypi
 
 
 --------------------------------------------
