@@ -144,8 +144,11 @@ rsync -avz --rsync-path="sudo rsync" qt5pi pi@192.168.58.2:/usr/local
 Raspberry pi ssh deployment for QT5.12
 --------------------------------------------
 export QT_QPA_PLATFOMRTHEME=qt5ct
+
 export DISPLAY=:0.0
+
 export XAUTHORITY=/home/pi/.Xauthrity
+
 export XDG_SESSION_TYPE=x11
 
 Qt creator environment batch edit
@@ -153,8 +156,11 @@ Qt creator environment batch edit
 Go to project > run > system environment > batch edit > add these:
   
 QT_QPA_PLATFOMRTHEME=qt5ct
+
 DISPLAY=:0.0
+
 XAUTHORITY=/home/pi/.Xauthrity
+
 XDG_SESSION_TYPE=x11
 
 
