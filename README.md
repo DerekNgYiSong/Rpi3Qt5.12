@@ -179,3 +179,15 @@ ssh pi@192.168.58.2
 ./qopenglwidget
 
 //at raspiberry pi screen, a opengl GUI is shown with ~60 calls/s
+
+
+
+-------------------------------------------
+QT GDB debug
+-------------------------------------------
+
+sudo apt-get install gdbserver
+sudo apt-get install gdb-multiarch
+
+in Qt creator, set Kits>>debugger>> new debugger Path = /usr/bin/gdb-multiarch
+Add debugger into Rpi Kits.
