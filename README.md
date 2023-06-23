@@ -1,6 +1,6 @@
 # Raspberry Pi 3 with Qt5.12.2
 
-
+https://mender.io/resources/guides-and-how-tos/_resources/yocto-sdk-quickstart
 
 This steps compiles QT5.12.2 into raspberry pi 3 with Buster OS and cross compile to Rpi3 program.
 
