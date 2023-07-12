@@ -53,6 +53,8 @@ sudo reboot
 sudo rpi-update  
 sudo reboot  
 
+sudo apt install build-essential
+
 sudo apt-get build-dep qt5-qmake
 
 sudo apt-get build-dep libqt5webengine-data
